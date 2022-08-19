@@ -36,9 +36,10 @@ def click():
         tx['text'] = '임금 : ' + str(sum) + 'G'
         current_var.set(0)
     elif(mc == 'no'):
-        print(mc)
-        tk.messagebox.showinfo('임금지급','잘 가')
         sum = sum  + 1
+        so = '임금' + str(sum) +'G'
+        tk.messagebox.showinfo('임금지급',so)
+
         tx['text'] = '임금 : ' + str(sum) + 'G'
         current_var.set(0)
         quit()
